@@ -1,0 +1,13 @@
+@import 'src/assets/styles/abstracts/mixins';
+@import 'src/assets/styles/abstracts/variables';
+
+.footer {
+  margin: 25px 0;
+  text-align: center;
+
+  span {
+    padding: 2px 0;
+    display: block;
+    color: #ff0;
+  }
+}

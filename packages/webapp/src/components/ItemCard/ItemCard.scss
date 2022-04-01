@@ -1,0 +1,46 @@
+@import 'src/assets/styles/abstracts/mixins';
+@import 'src/assets/styles/abstracts/variables';
+
+.item-card {
+  padding: 15px;
+  font-size: 12px;
+  @include card();
+
+  &__title {
+    margin: 0 0 15px 0;
+    font-size: 13px;
+    line-height: 1.25;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  &__list {
+    margin: 10px 0 0;
+
+    h4 {
+      line-height: 20px;
+      font-weight: 600;
+    }
+
+    .emoji-icon {
+      margin: 0 4px 0 0;
+      background: #000000;
+    }
+
+    li {
+      margin: 2px 0 0;
+
+      label {
+        font-weight: 600;
+      }
+
+      span.minus {
+        color: red;
+      }
+
+      span.plus {
+        color: green;
+      }
+    }
+  }
+}

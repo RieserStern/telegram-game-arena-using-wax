@@ -1,0 +1,29 @@
+@import 'src/assets/styles/abstracts/mixins';
+@import 'src/assets/styles/abstracts/variables';
+
+.hero-card {
+  padding: 20px 15px;
+  font-size: 12px;
+  @include card();
+
+  &__title {
+    margin: 0 0 15px 0;
+    font-size: 14px;
+    line-height: 1.25;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  &__avatar {
+    text-align: center;
+  }
+
+  &__content {
+    margin-top: 15px;
+  }
+
+  &:hover {
+    box-shadow: $box-shadow-lg;
+    transition: $easing;
+  }
+}

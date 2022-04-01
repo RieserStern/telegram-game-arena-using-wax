@@ -1,0 +1,15 @@
+@import 'src/assets/styles/abstracts/mixins';
+@import 'src/assets/styles/abstracts/variables';
+
+.chronicle-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  font-size: 14px;
+  @include card();
+
+  &__date {
+    font-size: 10px;
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "arena-game",
+  "private": true,
+  "version": "1.0.0",
+  "engines": {
+    "node": "14",
+    "npm": "7"
+  },
+  "scripts": {
+    "dev:server": "npm run dev -w server",
+    "dev:webapp": "npm run start -w webapp",
+    "start": "npm run start -w server",
+    "build": "npm run build -w webapp",
+    "expose": "npm run expose -w webapp"
+  },
+  "workspaces": [
+    "./packages/*"
+  ],
+  "devDependencies": {
+    "prettier": "^2.5.1"
+  }
+}

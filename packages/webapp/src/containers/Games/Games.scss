@@ -1,0 +1,61 @@
+@import 'src/assets/styles/abstracts/mixins';
+@import 'src/assets/styles/abstracts/variables';
+
+
+.game-item {
+  min-height: 60px;
+  margin: 10px 0 0;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.85;
+  box-shadow: $box-shadow-sm;
+  background: $primary-bg-color;
+  
+  &__title {
+    font-size: 12px;
+    margin: 0 0 10px 0;
+  }
+
+  &__teams,
+  &__players {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__team {
+    flex: 1;
+
+    &--last {
+      text-align: right;
+    }
+
+    .character-tag {
+      margin: 10px 0 0;
+    }
+  }
+
+  &__team-players {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__royal-players {
+    width: 100%;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+  }
+
+  &__player {
+    flex: 1;
+
+    &--last {
+      text-align: right;
+    }
+  }
+}

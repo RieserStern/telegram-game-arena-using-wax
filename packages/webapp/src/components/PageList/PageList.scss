@@ -1,0 +1,20 @@
+.page-list {
+}
+
+.pagination {
+  margin: 20px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  &__button {
+    margin: 5px;
+    width: 40px;
+    height: 40px;
+
+    &.is-active {
+      background: #200e5f;
+      pointer-events: none;
+    }
+  }
+}

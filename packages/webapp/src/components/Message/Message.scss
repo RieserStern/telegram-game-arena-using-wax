@@ -1,0 +1,28 @@
+@import 'src/assets/styles/abstracts/mixins';
+@import 'src/assets/styles/abstracts/variables';
+
+.message {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__title {
+    color: #ff0;
+    font-family: $font-base;
+    letter-spacing: 0.065em;
+  }
+
+  &--sm {
+    font-size: 24px;
+  }
+
+  &--md {
+    font-size: 28px;
+  }
+
+  &--lg {
+    font-size: 32px;
+  }
+}
